@@ -4,7 +4,8 @@ import './Animal.css';
 function Animal(props){
     return (
       <div className="Animal">
-        <p>Hello, I am {props.animal_name}. It is nice to meet you!</p>
+        <h1>{props.animal}</h1>
+        <p>Hello, I am <span>{props.animal_name}</span>. It is nice to meet you!</p>
       </div>   
     )
   }

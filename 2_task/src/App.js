@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Animal from "./Components/Animal/Animal";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    animals: [
+      { name: "Fox", img: "https://source.unsplash.com/AjZjBEjQ5Cw/"},
+      { name: "Rabbit", img: "https://source.unsplash.com/hS41iEO300E/"},
+      { name: "Wolf", img: "https://source.unsplash.com/QqoXWeIzZfo"},
+    ],
+  };
+  render() {
+    return (
+      <div className="cards">
+        <Animal 
+          name={this.state.animals[0].name}
+          img={this.state.animals[0].img}
+        />
+        <Animal 
+          name={this.state.animals[1].name}
+          img={this.state.animals[1].img}
+        />
+        <Animal 
+          name={this.state.animals[2].name}
+          img={this.state.animals[2].img}
+        />
+      </div>
+    )
+  }
 }
+
 
 export default App;

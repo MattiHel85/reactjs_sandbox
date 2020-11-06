@@ -3,8 +3,20 @@
     border-radius: 5px;
     box-shadow: 0 0 5px #333;
     padding: 1rem;
+    margin: 1rem;
+    width: 300px;
 }
 
 .animalCard img {
     max-height: 200px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.animalCard button {
+    display: flex;
+    flex-direction: column; 
+    padding: 0.5rem;   
+    border: 2px solid black;
+    text-transform: uppercase;
 }

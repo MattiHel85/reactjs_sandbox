@@ -3,7 +3,7 @@ import "./Animal.css";
 
 const greetingText = (name) => {
     console.log(name);
-    alert(`Hello, I am ${name}. It is nice to meet you!`);
+    alert(`Hello, I am a ${name}. It is nice to meet you!`);
 };
 
 const Animal = (props) => {

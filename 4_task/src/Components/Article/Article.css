@@ -1,0 +1,12 @@
+.article {
+    background-color: #69013b;
+    border-radius: 2px;
+    padding: 1rem;
+    color: #fce0d3;
+}
+
+.article img {
+    width: 100%;
+    object-fit: cover;
+    height: 210px;
+}
